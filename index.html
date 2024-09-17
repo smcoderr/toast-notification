@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Title -->
+    <title>Your Website Title</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="This is a description of your website. Make it concise and relevant to improve search engine ranking." />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.yourwebsite.com" />
+
+    <!-- Open Graph Tags for Social Sharing -->
+    <meta property="og:title" content="Your Website Title" />
+    <meta property="og:description" content="This is the description that will show when the link is shared on social media." />
+    <meta property="og:image" content="./img/jsimg.webp" />
+    <meta property="og:url" content="https://www.yourwebsite.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Your Website Title" />
+    <meta name="twitter:description" content="This is the description for Twitter sharing." />
+    <meta name="twitter:image" content="./img/jsimg.webp" />
+
+    <!-- Schema Markup (JSON-LD) for Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://www.yourwebsite.com",
+        "name": "Your Website Title",
+        "description": "This is a brief description of your website.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Your Company Name"
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://www.yourwebsite.com/search?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      }
+    </script>
+
+    <!-- Font Awesome for Icons -->
+    <script
+      src="https://kit.fontawesome.com/170894ee94.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="buttons">
+      <button onclick="showToast(successMsg)">success</button>
+      <button onclick="showToast(errorMsg)">Error</button>
+      <button onclick="showToast(invalidMsg)">Invalid</button>
+    </div>
+    <div id="toastBox"></div>
+    <script src="./index.js"></script>
+  </body>
+</html>
